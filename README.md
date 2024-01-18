@@ -10,4 +10,4 @@ SELECT rowid, geometry, "#ff0000" as marker, "#0000ff" as stroke, 0.5 as [stroke
 FROM vacant_bldg_rehabs
 ORDER BY rowid
 ```
-
+The key point is that for some reason it is trying to pull markers from a mapbox location where I don't have credentials to see them.
