@@ -6,7 +6,7 @@ What I see when I load this with `dataset . --root` is documented at https://git
 
 I get the broken images regardless of whether the table is simply loaded by default or there is a simplestyle SQL query
 ```
-SELECT rowid, geometry, "#ff0000" as marker, "#0000ff" as stroke, 0.5 as [stroke-width]
+SELECT rowid, geometry, "#ff0000" as fill, "#0000ff" as stroke, 0.5 as [stroke-width]
 FROM vacant_bldg_rehabs
 ORDER BY rowid
 ```
