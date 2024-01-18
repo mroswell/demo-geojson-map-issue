@@ -10,4 +10,11 @@ SELECT rowid, geometry, "#ff0000" as marker, "#0000ff" as stroke, 0.5 as [stroke
 FROM vacant_bldg_rehabs
 ORDER BY rowid
 ```
-The key point is that for some reason it is trying to pull markers from a mapbox location where I don't have credentials to see them.
+The key point is that for some reason it is trying to pull markers from a mapbox location where I don't have credentials to see them. The image link for each marker is: https://a.tiles.mapbox.com/v3/marker/pin-m+7e7e7e@2x.png
+which for me yields:
+```
+{
+"message": "Not Authorized",
+"error_detail": "Direct access not allowed"
+}
+```
